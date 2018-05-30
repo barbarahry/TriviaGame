@@ -1,0 +1,146 @@
+<!DOCTYPE  html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>TRIVIA</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Creepster&amp;text=JAVSCRIPT">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="assets/javascript/js.js"></script>
+</head>
+<body>
+    
+    <header>
+         
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <h1 class="logo textlogo"><img src="assets/images/star.png" width="200"  alt=""/></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+
+              </ul>
+              
+            </div>
+          </nav>       
+    
+    </header>
+    <div class="container">
+    
+
+    <section class="box">
+        
+
+     
+            <h1 ><span id="show-number">Time Remaining - </span></h1>
+            <hr>
+          
+
+        <p class="p pspacing"><iframe width="560" height="315" src="https://www.youtube.com/embed/vjAi9BP1QIU?rel=0&amp;controls=0&amp;showinfo=0&amp;start=455" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<!--        <p class="p pspacing">Commrade Lenin was born in:</p>-->
+      <form>
+          ​<fieldset>
+  <legend><h2>Commrade Lenin was born in:</h2></legend>
+  <label for="1871">
+    <input type="radio" value="1871" name="year0" id="1871"> <span>1871</span>
+  </label>
+
+  <label for="1870">
+    <input type="radio" value="1870" name="year0" id="1870"> <span>1870</span>
+  </label>
+
+  <label for="1872">
+    <input type="radio" value="1872"  name="year0" id="1872" > <span>1872</span>
+  </label>
+</fieldset>
+       
+
+        ​<fieldset>
+  <legend><h2>Commrade Putin was born in:</h2></legend>
+  <label for="1952">
+    <input type="radio" value="1952" name="year1" id="1952"> <span>1952</span>
+  </label>
+
+  <label for="1953">
+    <input type="radio" value="1953" name="year1" id="1953"> <span>1953</span>
+  </label>
+
+  <label for="1954">
+    <input type="radio" value="1954"  name="year1" id="1954" > <span>1954</span>
+  </label>
+</fieldset>
+
+        ​<fieldset>
+  <legend><h2>Commrade Trump was born in:</h2></legend>
+  <label for="1946">
+    <input type="radio" value="1946" name="year2" id="1946"> <span>1946</span>
+  </label>
+
+  <label for="1947">
+    <input type="radio" value="1947" name="year2" id="1947"> <span>1947</span>
+  </label>
+
+  <label for="1948">
+    <input type="radio" value="1948"  name="year2" id="1948" > <span>1948</span>
+  </label>
+</fieldset>
+</form>
+
+
+<!-- <button type="submit" class="btn btn-primary mt-3">DONE</button> -->
+
+
+    
+  
+    </section>
+<!-- modal -->
+<section>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="myGuess">
+  RESULTS
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalCenterTitle0">Results</h1>
+      
+      </div>
+      <div class="modal-body">
+        <div >
+          <h2 class="modal-title" id="exampleModalCenterTitle1">Correct: <span id="correct">0</span></h2>
+          <h2 class="modal-title" id="exampleModalCenterTitle2">Incorrect: <span id="incorrect">0</span></h2>
+          <h2 class="modal-title" id="exampleModalCenterTitle3">Unanwered: <span id="unanswered">0</span></h2>
+          </div>
+      </div>
+      <div class="modal-footer">
+   
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="closeWindow">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+
+</section>
+
+</div>
+<footer><img class="len" src="assets/images/Lenin2.png" width="1000"  alt=""/></footer>
+    
+</body>
+</html>
